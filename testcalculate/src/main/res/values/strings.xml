@@ -1,0 +1,8 @@
+<resources>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_length_conversion">LengthConversion</string>
+    <string name="title_activity_science_calculate">ScienceCalculateActivity</string>
+    <string name="title_activity_decimal_conversion">DecimalConversionActivity</string>
+    <string name="title_activity_volume">VolumeActivity</string>
+
+</resources>

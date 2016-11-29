@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="cn.edu.bistu.cs.se.testcalculate.DecimalConversionActivity"
+    tools:showIn="@layout/activity_decimal_conversion"
+
+    android:orientation="vertical"
+    android:background="#CCD0D1"
+    android:padding="12dip">
+
+    <Button
+        android:layout_width="39dp"
+        android:layout_height="36dp"
+        android:layout_gravity="left"
+        android:text="+"
+        android:background="@drawable/menu_shape"
+        android:id="@+id/decimal_menu_btn" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="转换数字"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/binaryOrigin_btn"
+            style="@style/DecimalButtonStyle"
+            android:text="@string/binary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/octonaryOrigin_btn"
+            style="@style/DecimalButtonStyle"
+            android:text="@string/octonary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/decimalOrigin_btn"
+            style="@style/DecimalButtonStyle"
+            android:text="@string/decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/hexadecimalOrigin_btn"
+            style="@style/DecimalButtonStyle"
+            android:text="@string/hexadecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/shape"
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="12dip" >
+
+        <TextView
+            android:id="@+id/decimal_origin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:background="@null"
+            android:textColor="#1B1D20"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="转换结果"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/binaryChange_btn"
+            style="@style/DecimalButtonStyle"
+            android:text="@string/binary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/octonaryChange_btn"
+            style="@style/DecimalButtonStyle"
+            android:text="@string/octonary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/decimalChange_btn"
+            style="@style/DecimalButtonStyle"
+            android:text="@string/decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/hexadecimalChange_btn"
+            style="@style/DecimalButtonStyle"
+            android:text="@string/hexadecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/shape"
+        android:gravity="right"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="12dip" >
+
+        <TextView
+            android:id="@+id/decimal_change"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:background="@null"
+            android:textColor="#1B1D20"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/decimal_zero_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/zero"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/decimal_one_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/decimal_two_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/decimal_three_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/decimal_four_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+                    <Button
+                        android:id="@+id/decimal_five_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/five"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/decimal_six_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/six"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/decimal_seven_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/seven"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/decimal_eight_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/eight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:id="@+id/decimal_nine_btn"
+                        style="@style/DecimalButtonStyle"
+                        android:text="@string/nine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/decimal_DEL_btn"
+                style="@style/DecimalButtonStyle"
+                android:text="DEL"
+                android:layout_height="98dp"
+                android:layout_width="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/decimal_A_btn"
+                style="@style/DecimalButtonStyle"
+                android:text="@string/a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/decimal_B_btn"
+                style="@style/DecimalButtonStyle"
+                android:text="@string/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/decimal_C_btn"
+                style="@style/DecimalButtonStyle"
+                android:text="@string/c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/decimal_D_btn"
+                style="@style/DecimalButtonStyle"
+                android:text="@string/d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/decimal_E_btn"
+                style="@style/DecimalButtonStyle"
+                android:text="@string/e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/decimal_F_btn"
+                style="@style/DecimalButtonStyle"
+                android:text="@string/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

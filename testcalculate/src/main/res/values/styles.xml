@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- 自定义属性. -->
+    <style name="baseButtonStyle">
+        <item name="android:layout_margin">5dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Button3Style" parent="baseButtonStyle">
+        <item name="android:background">@drawable/button2_selector</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Button4Style" parent="baseButtonStyle">
+        <item name="android:background">@drawable/button4_selector</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="Button5Style" parent="baseButtonStyle">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="Col1Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">0.6</item>
+    </style>
+
+    <style name="Col2Style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!--进制转换 -->
+    <style name="DecimalButtonStyle">
+        <item name="android:layout_margin">1dip</item>
+        <item name="android:background">@drawable/button2_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

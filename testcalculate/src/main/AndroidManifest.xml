@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.edu.bistu.cs.se.testcalculate">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/image_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LengthConversion"
+            android:label="@string/title_activity_length_conversion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ScienceCalculateActivity"
+            android:label="@string/title_activity_science_calculate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DecimalConversionActivity"
+            android:label="@string/title_activity_decimal_conversion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".VolumeActivity"
+            android:label="@string/title_activity_volume"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+    </application>
+
+</manifest>
